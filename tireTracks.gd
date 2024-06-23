@@ -1,7 +1,9 @@
 extends MeshInstance3D
 
 # script by thomason1005 to create tire marks on a vehiclewheel
-# see the comments for how to use
+# this is meant to be attached to a MeshInstance3D which is not a child of the VehicleBody, so in global space.
+# the mesh can be left empty, as it will be overriden each frame
+# one of these is needed for each wheel, apply any material you want to it
 
 @export var target:VehicleWheel3D # the tire we are making tire marks for
 @export var skidLimit:float = .7 # the limit at which we start creating tire marks
